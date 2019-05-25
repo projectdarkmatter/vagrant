@@ -1,0 +1,6 @@
+/.vagrant
+/logs
+/app/*
+!/app/.gitkeep
+
+*.log
