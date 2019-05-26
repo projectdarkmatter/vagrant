@@ -40,6 +40,8 @@ wp --allow-root plugin install query-monitor redis-cache rewrite-rules-inspector
 wp --allow-root plugin activate query-monitor redis-cache rewrite-rules-inspector --network
 wp --allow-root redis update-dropin
 
+wp --allow-root plugin advanced-custom-fields autodescription classic-editor install elasticpress jetpack wordpress-seo woocommerce
+
 chown -R vagrant:vagrant /srv/app/
 chown www-data:www-data /srv/app/wp-content/uploads/
 
