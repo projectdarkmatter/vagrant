@@ -29,9 +29,11 @@ apt-get install -y mariadb-client mariadb-server
 echo -e 'Installing PHP 7.2';
 echo -e '==================';
 
-apt-get install -y php7.2-fpm php7.2-cli php7.2-curl php7.2-json php7.2-mbstring php7.2-mysql php7.2-opcache php7.2-soap php7.2-xml php7.2-xmlrpc php7.2-zip php-imagick php-redis
+apt-get install -y php7.2-fpm php7.2-cli php7.2-curl php7.2-json php7.2-mbstring php7.2-mysql php7.2-opcache php7.2-soap php7.2-xml php7.2-xmlrpc php7.2-zip
+apt-get install -y php-imagick php-redis php-xdebug
 
 cp /srv/config/www.conf /etc/php/7.2/fpm/pool.d/www.conf
+cp /srv/config/php/xdebug.ini /etc/php/7.2/mods-available/xdebug.ini
 
 echo -e 'Installing Elasticsearch';
 echo -e '========================';
