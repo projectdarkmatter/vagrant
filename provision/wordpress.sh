@@ -35,7 +35,9 @@ wp --allow-root db create
 
 wp --allow-root core multisite-install --title="Dark Matter" --url="wp.darkmatter.test" --admin_password="password" --admin_email="admin@wp.darkmatter.test" --skip-email
 
-wp --allow-root plugin install query-monitor redis-cache rewrite-rules-inspector --activate-network
+wp --allow-root plugin install query-monitor redis-cache rewrite-rules-inspector
+
+wp --allow-root plugin activate query-monitor redis-cache rewrite-rules-inspector --network
 wp --allow-root redis update-dropin
 
 chown -R vagrant:vagrant /srv/app/
