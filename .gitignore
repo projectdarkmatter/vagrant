@@ -1,4 +1,5 @@
 /.vagrant
+/.vscode
 /logs
 /app/*
 !/app/.gitkeep
