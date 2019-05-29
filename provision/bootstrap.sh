@@ -20,6 +20,7 @@ echo -e 'Installing Redis';
 echo -e '================';
 
 apt-get install -y redis-server redis-tools
+systemctl enable redis-server
 
 echo -e 'Installing MariaDB';
 echo -e '==================';
@@ -40,6 +41,8 @@ echo -e '========================';
 
 apt-get install -y elasticsearch
 service elasticsearch start
+
+systemctl enable elasticsearch
 
 echo -e 'Installing OpenResty';
 echo -e '====================';
